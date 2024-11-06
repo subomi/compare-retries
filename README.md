@@ -1,5 +1,5 @@
 # compare-retries
-![Demo](./demo.gif)
+![Demo](./demo.mp4)
 
 ### Run script
 ```bash
