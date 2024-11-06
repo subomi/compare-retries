@@ -35,7 +35,8 @@ var (
 			name: "Capped Exponential Backoff",
 			retry: func() retry.Backoff {
 				ex := retry.NewExponential(20 * time.Second)
-				return retry.WithCappedDuration(7200*time.Second, ex)
+				jitter := retry.WithJitterPercent(10, ex)
+				return retry.WithCappedDuration(7200*time.Second, jitter)
 			}(),
 		},
 	}
