@@ -14,4 +14,4 @@ gnuplot plot_retries.gp
 ```
 
 ### The result 
-[Comparing Retry Algorithms](./retries_plot.png)
+![Comparing Retry Algorithms](./retries_plot.png)
